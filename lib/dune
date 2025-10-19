@@ -1,3 +1,10 @@
+(menhir
+ (flags (--explain))
+ (modules parser))
+
+(ocamllex
+ (modules lexer))
+
 (library
  (preprocess (pps ppx_deriving.show))
  (name min_inferara))

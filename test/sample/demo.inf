@@ -1,0 +1,10 @@
+fn proof_transaction_change_balance() forall {
+  let sender: Address = @; /// コンパイラがあらゆるアドレスを検証します
+  let receiver: Address = @; /// コンパイラがあらゆるアドレスを検証します
+  let amount: u32 = @; /// コンパイラがあらゆる u32 値を検証します
+  let sender_balance = _get_balance(sender);
+  let receiver_balance = _get_balance(receiver);
+  _send_transaction(from: sender, to: receiver, amount: amount);
+  assert _get_balance(sender) == sender_balance - amount;
+  assert _get_balance(receiver) == receiver_balance + amount;
+}

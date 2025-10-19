@@ -1,0 +1,9 @@
+fn foo(x, y) {
+  @;
+}
+
+external fn factor(u32) -> u32;
+
+fn proof_transaction_change_balance() forall {
+  let sender: Address = @; /// コンパイラがあらゆるアドレスを検証します
+}
