@@ -12,7 +12,8 @@ bug-reports: "https://github.com/proof-ninja/min_inferara/issues"
 depends: [
   "ocaml"
   "dune" {>= "3.19"}
-  "memhir"
+  "ppx_deriving"
+  "menhir"
   "ounit2" {with-test}
   "odoc" {with-doc}
 ]

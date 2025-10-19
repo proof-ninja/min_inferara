@@ -19,7 +19,7 @@
  (name min_inferara)
  (synopsis "A minimum implementation of Inferara")
  (description "A longer description")
- (depends ocaml dune memhir (ounit2 :with-test))
+ (depends ocaml dune ppx_deriving menhir (ounit2 :with-test))
  (tags
   ("add topics" "to describe" your project)))
 
