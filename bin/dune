@@ -1,0 +1,4 @@
+(executable
+ (public_name min_inferara)
+ (name main)
+ (libraries min_inferara))
